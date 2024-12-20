@@ -326,7 +326,361 @@ body {
   
   
 
+/*...new arrivals...*/
+.arrivals{
+    width:100%;
+    
+    margin-right: 35 px;
+    margin: bottom 35px;
+    
+}
+.arrivals h1{
+font: size 50px;
+text-align: center;
+margin: bottom 35px;
+}
+.arrivals .arrivals-box{
+    width:95%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 25px;
+}
+.arrivals .arrivals-box .arrivals-card{
+    width: 200px; 
+    text-align: center;
+    padding: 30px;
+    border: 1px solid #919191;
+    margin:auto;
+}
+.arrivals .arrivals-box .arrivals-card:hover{
+    box-shadow: 0 0 5px #63e2e7;
 
+}
+.star{
+margin-top: 20px;
+margin-bottom: 20px;
+padding: auto;
+color: #089da1;
+
+
+
+}
+.b-img{
+width: 100%;
+height: 20vh;
+
+}
+.arrivals .arrivals-box .arrivals-card .arrivals-image{
+    width: 150px;
+    height: 180px;
+    margin:0 auto;
+    cursor: pointer;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+.arrivals .arrivals-box .arrivals-card .arrivals-image img{
+    width:100%;
+    height:auto;
+    object-fit: cover;
+    object-position:center;
+    transition: 0.3s;
+}
+.arrivals .arrivals-box .arrivals-card:hover .arrivals-image img{
+    transform: scale(1.1);
+}
+.arrivals .arrivals-box .arrivals-card .arrivals-tag p{
+    font-size: 20px;
+    margin: 8px 0;
+}
+.arrivals .arrivals-box .arrivals-card .arrivals-tag .arrivals-icon{
+    color: #089da1;
+    margin-bottom: 18px;
+    margin: 20px;
+}
+.arrivals .arrivals-box .arrivals-card .arrivals-tag .arrivals_btn{
+    padding: 8px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    text-align: center;
+    color: #000;
+
+}
+.ar-tag{
+margin: auto;
+
+}
+/*....reviews....*/
+
+
+.Reviews{
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    
+}
+.Revie{
+    text-align: center;
+    font-size: 30px;
+    padding-top:40px;
+   
+}
+.Reviews .review-box{
+width: 60%;
+margin: 15px auto;
+height: 50vh;
+display: inline;
+align-items: center;
+justify-content: center;
+}
+
+.Reviews .review-box .review-card{
+    width: 400px;
+    height: 320px;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px;
+    margin: 0 12px;
+    text-align: right;
+}
+.Reviews .review-box .review-card i{
+    float: right;
+    font-size: 120px;
+    position: relative;
+    bottom: 20px;
+    color: #eaeaea;
+   
+}
+.Reviews .review-box .review-card .card-top img{
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+   
+    
+}
+.Reviews .review-box .review-card .card p{
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 22px;
+    
+}
+.card {
+    box-shadow: 0 4px 8px 0 rgba(250, 2, 2, 0.2);
+    max-width: 20%;
+    margin: auto;
+    text-align: center;
+    margin-left: 3px;
+
+  }
+.Reviews .review-box .review-card .card .review-icon i{
+font-size: 16px;
+float: left;
+margin-top: 20px;
+color: #484f50;
+}
+.quote-box{
+    position: relative;
+    padding: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+.quote-icon{
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: -80px;
+    right: 10px;
+}
+.review-icon{
+    margin-top: 10px;
+}
+.review-icon i{
+    color: #089da1;
+}
+/*... banner...*/
+.banner{
+    width: 100%;
+    height: 50vh;
+    background-image: url(banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-btn{
+    padding: 10px 15px;
+    background-color: #b3d6f3;
+    color: hsl(0, 0%, 100%);
+    position: relative;
+    top: 85%;
+    left: 7%;
+    text-decoration: none;
+    text-align: end;
+
+}
+.ro-image {
+    width : 70px;
+    height: 70px;
+    border-radius: 50%; 
+   overflow: hidden; 
+   text-align: left; 
+   margin-right: 200px;
+}
+/*--- blog -----*/
+.blogs{
+    box-shadow: 0 4px 8px 0 rgba(250, 2, 2, 0.2);
+    max-width: 350px;
+    margin-left: 50px;
+    text-align: left;
+    display: flex;
+    margin-right: 20px;
+    
+}
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.blog .blog-box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.blog .blog-box .blog-card{
+    margin: 0 auto;
+    width: 1500px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    
+}
+.blog .blog-box .blog-card .blog-img{
+    width: 450%;
+    height: 300%;
+    overflow: hidden;
+}
+.blog .blog-box .blog-card .blog-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog .blog-box .blog-card .blog-tag{
+    padding: 20px;
+    text-align: left;
+}
+.blog .blog-box .blog-card .blog-tag h2{
+    color: #089da1;
+}
+.blog .blog-box .blog-card .blog-tag p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+.blog .blog-box .blog-card .blog-tag .blog-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #089da1;
+    cursor: pointer;
+}
+.calendar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    color: #089da1;
+}
+.calendar-icon{
+    font-size: 30px;
+}
+.heart-icon{
+    font-size: 30px;
+}
+.db{
+background-image:url('db.jpeg') ;
+}
+
+
+/*.... footer ...*/
+footer{
+    width: 100%;
+    background: #eaeaea;
+}
+.logo-img{
+    width: 100px;
+    height: 50px;
+}
+footer .footer-main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+footer .footer-main .tag{
+    margin: 10px 0;
+}
+footer .footer-main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+footer .footer-main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+footer .footer-main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+footer .footer-main .tag a{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 10px 0;
+}
+footer .footer-main .tag i{
+    margin-right: 10px;
+}
+footer .footer-main .tag .search-bar{
+    width: 230px;
+    height: 30px;
+    background: rgb(202,202,202,202);
+    border-radius: 25px;
+}
+footer .footer-main .tag .search-bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    font-size: 13px;
+    background: none;
+}
+footer .footer-main .tag .search-bar button{
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+footer .end span{
+    color: #089da1;
+    font-weight: 600;
+}
 
 
 
