@@ -681,6 +681,146 @@ footer .end span{
     color: #089da1;
     font-weight: 600;
 }
+.arrivals,
+.Reviews,
+.blog,
+.banner,
+footer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+/* desktop*/
+@media (min-width:1024px){
+    .arrivals h1{
+        font-size: 50px;
+    }
+    .arrivals .arrivals-box{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .Reviews h1 {
+        font-size: 40px;
+    }
+    .Reviews .review-box{
+        width: 60%;
+    }
+    .blog .blog-box{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .banner{
+        height: 50vh;
+    }
+    foteer .footer-main{
+        flex-direction: row;
+    }
+}
+/* ipad pro */
+@media (min-width:768px)and (max-width:1023px) {
+    .arrivals h1{
+        font-size: 40px;
+    }
+    .arrivals .arrivals-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .Reviews h1{
+        font-size: 35px;
+    }
+    .Reviews .review-box{
+        width: 70%;
+    }
+    .blog .blog-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .banner{
+        height: 40vh;
+    }
+    footer .footer-main{
+        flex-direction: column;
+    }
+    
+}
+/* iphone xr */
+@media (max-width:767px) {
+    .arrivals h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .arrivals .arrivals-box{
+        grid-template-columns: 1fr;
+    }
+    .arrivals .arrivals-box .arrivals-card{
+        width: 100%;
+        padding: 15px;
+    }
+    .Reviews{
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .Reviews h1{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .Reviews .review-box{
+        width: 100%;
+    }
+    .Reviews .review-box .review-card{
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 8px #089da1;
+        padding: 20px;
+        text-align: center;
+    }
+    .Reviews .review-box .review-card i{
+        font-size: 60px;
+        margin-bottom: 20px;
+    }
+    .Reviews .review-box .review-card .card-top img{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+    }
+    .Reviews .review-box .review-card .card p{
+        font-size: 10px;
+        margin: 10px 0;
+        text-align: justify;
+        line-height: 1.5;
+    }
+    .Reviews .review-box .review-card .review-icon i{
+        font-size: 20px;
+    }
+    .quote-box{
+        padding: 20px;
+        font-size: 18px;
+        color:#333;
+        line-height: 1.8;
+    }
+    .quote-icon{
+        font-size: 50px;
+        color: rgba(0, 0, 0, 0.1);
+        position: absolute;
+        top: -50px;
+        right: 10px;
+    }
+    .blog .blog-box{
+        grid-template-columns: 1fr;
+    }
+    .banner{
+        height: 30vh;
+        margin-bottom: 40px;
+        position: relative;
+        z-index: 1;
+    }
+    footer  .footer-main{
+      flex-direction: column;
+    }
+    
+}
+
+
 
 
 
